@@ -4,6 +4,7 @@
   border: 3px solid black;
   border-radius: 50px;
   overflow: hidden;
+  padding: 0;
 }
 
 .container.first {
@@ -11,16 +12,18 @@
   display: flex;
   justify-content: center;
   min-height: 700px;
+  min-width: 100vw;
 }
 
 .box.one {
   background-color: #6bb56b;
   border-color: black;
-  text-align: center;
+  justify-content: center;
   display: flex;
   align-items: center;
-  padding-right: 150px;
-  padding-left: 150px;
+  width: 50%;
+  /* padding-right: 150px;
+  padding-left: 150px; */
 }
 
 .box.two {
@@ -51,32 +54,24 @@ span {
 }
 
 .col-box-one {
-  overflow: hidden;
-  flex-grow: 5;
-  padding-right: 125px;
-  padding-left: 125px;
+  flex-grow: 1;
+  justify-content: center;
   display: flex;
   align-items: center;
   background-color: #fff7bd;
 }
 
 .col-box-two {
-  overflow: hidden;
-  flex-grow: 5;
-  text-align: center;
-  padding-right: 125px;
-  padding-left: 125px;
+  flex-grow: 1;
+  justify-content: center;
   display: flex;
   align-items: center;
   background-color: #ffed69;
 }
 
 .col-box-three {
-  overflow: hidden;
-  flex-grow: 5;
-  text-align: center;
-  padding-right: 125px;
-  padding-left: 125px;
+  flex-grow: 1;
+  justify-content: center;
   display: flex;
   align-items: center;
   background-color: #ffe41f;
@@ -84,5 +79,35 @@ span {
 
 .btwrow {
   display: flex;
-  justify-content: space-around;
+  min-height: 300px;
+  flex-grow: 1;
+}
+
+.card-header {
+  text-align: center;
+  font-size: 22px;
+}
+
+.card {
+  min-height: 300px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.card-text {
+  text-align: center;
+}
+.btn-different {
+  color: #007bff;
+  background-color: white;
 }
