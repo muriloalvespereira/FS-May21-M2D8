@@ -81,3 +81,8 @@ span {
   align-items: center;
   background-color: #ffe41f;
 }
+
+.btwrow {
+  display: flex;
+  justify-content: space-around;
+}
